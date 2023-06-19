@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Билеты</title>
+  </head>
+  <body>
+    <form class="form">
+      <div class="form__header">
+        <h1>Заказ Билетов</h1> <hr />
+      </div>
+      <div class="form__body">
+      <div class="form__colum">
+        <div class="form__group">
+          <label for="FCs">Ваши фамилия имя отчество</label><br />
+          <input type="text" name="ima" id="ima" placeholder="Сергеев Сергей Сергеевич" class="form__control"/>
+        </div>
+        <div class="form__group">
+          <label for="Birthady">Желаемая дата посещения кинотеатра</label><br />
+          <input type="datetime-local" name="data" id="data" class="form__control"/>
+        </div>
+        <div class="form__group">
+          <label for="Nomer">Ваш номер телефона для обратной связи</label><br />
+          <input type="tel"  name="telephone" id="telephone" placeholder="+7-(951)-457-68-71"  class="form__control"/>
+        </div>
+        <div>
+          <label for="Film">Выберите жанр фильма и фильм</label><br/>
+          <select name="Films">
+            <optgroup label="Боевик">
+              <option value="1">Джон Уик 4</option>
+              <option value="2">Убийство в париже 2</option>
+              <option value="3">Миссия Ассасина</option>
+            </optgroup>
+            <optgroup label="Драма">
+              <option value="4">Вызов</option>
+              <option value="5">Снегирь</option>
+              <option value="6">Большой прыжок</option>
+            </optgroup>
+              <optgroup label="Комедия">
+              <option value="7">Беспринципные в деревне</option>
+              <option value="8">Хочу и буду</option>
+              <option value="9">Папы против мам</option>
+            </optgroup>
+          </select>
+        </div>
+      </div>
+
+      <div class="form__colum">
+        <div class="form__group">
+          <label for="Number_of_people">Введите ваш Email для отправки электронных билетов</label><br />
+          <input type="email" name="Email_Rabotnika" id="Email_Rabotnika" class="form__control"/>
+        </div>
+        <div class="form__group">
+          <label for="Dopolnitelno">Дополнительная информация:</label><br />
+
+          <p><input type="checkbox" name="vibor" id="vibor" value="3D" >Обязательно наличие 3D<Br>
+            <input type="checkbox" name="vibor" id="vibor" value="instr">Обязательно наличие инструктажа перед просмотром<Br>
+            <input type="checkbox" name="vibor" id="vibor" value="reklama">Обязательно отсутствие рекламных роликов перед фильмом</p>
+        </div>
+        <div clss="form__group">
+<label for="PIN">Введите номер вашей карты</label><br/>
+<input type="number" name="PIN" id="PIN" placeholder="**** **** **** ****" class="form__control"/>
+        </div>
+        <div class="form__group">
+          <label for="Rassilka">Сохранить данную карту?</label><br />
+          <p><input type="radio" name="Rassilka" id="Rassilka" value="Yes"/>Да<br>
+          <input type="radio" name="Rassilka" id="Rassilka" value="No"/>Нет</p>
+        </div>
+
+      <div>
+      <p><label for="Rad ">Выберите свободный ряд</label><br/>  
+      <select size="1" name="RAD" id="RAD" class="form_select">
+        <option>1</option>
+        <option>2</option>
+        <option>5</option>
+      </select>
+         </div>
+         <div>
+          <label for="Mesto">Выберите свободное  место</label><br/>  
+          <select size="1" name="Mesto" id="Mesto" class="form_select">
+            <option>5</option>
+            <option>11</option>
+            <option>13</option>
+            <option>16</option>
+          </select>
+             </div>
+        </div>
+      </div>
+
+      <button type="submit" class="form__submit">
+        Заказать
+      </button>
+    </form>
+  </body>
+</html>
